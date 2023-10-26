@@ -27,9 +27,9 @@ class MemberController extends Controller
         if ($member) { 
             $member->delete(); 
     
-            return redirect()->route('/')->with('success', 'Member deleted successfully');
+            return redirect('/')->with('success', 'Member deleted successfully');
         } else {
-            return redirect()->route('/')->with('error', 'Member not found');
+            return redirect('/')->with('error', 'Member not found');
         }
     }
 

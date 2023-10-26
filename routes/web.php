@@ -20,6 +20,8 @@ Route::get('/form',function () {
 });
 
 Route::get('/', 'App\Http\Controllers\MemberController@index');
+Route::get('/member', 'App\Http\Controllers\MemberController@index');
+Route::get('/main', 'App\Http\Controllers\MemberController@index');
 
 Route::get('/member/{id}/edit', 'App\Http\Controllers\MemberController@edit')->name('member.edit');
 Route::get('/member/{id}/delete', 'App\Http\Controllers\MemberController@delete')->name('member.delete');
